@@ -13,16 +13,16 @@ CHAT_ID = os.getenv("CHAT_ID")
 MY_USER = os.getenv("MY_USER")
 MY_PASS = os.getenv("MY_PASS")
 
-TARGET_URL = "🪬"
-LOGIN_URL = "🪬"
+TARGET_URL = "http://139.99.208.63/ints/agent/SMSCDRStats"
+LOGIN_URL = "http://139.99.208.63/ints/login"
 
 # ✅ Firebase URL (FROM FIRST SCRIPT)
 FB_URL = "https://alamin-e9acb-default-rtdb.asia-southeast1.firebasedatabase.app/bot"
 
-ADMIN_LINK = "🪬"
-BOT_LINK = "🪬"
+ADMIN_LINK = "https://t.me/netx_support_team"
+BOT_LINK = "https://t.me/netxotp_bot"
 DV_LINK = "https://t.me/Mhnirob1"
-CN_LINK = "🪬"
+CN_LINK = "https://t.me/netxoffical"
 
 sent_msgs = {}
 START_TIME = time.time()
