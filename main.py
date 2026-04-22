@@ -62,7 +62,10 @@ def send_telegram(date_str, num, sms_text, otp, cli_source, is_update=False):
             {"text": "👨‍🦲Admin", "url": ADMIN_LINK},
             {"text": "🔢Number bot", "url": BOT_LINK}
         ],
-
+[
+{"text": "💥Channel", "url": CN_LINK},
+{"text": "💻 Developer", "url": DV_LINK}
+]
     ]
 
     payload = {
