@@ -21,8 +21,7 @@ FB_URL = "https://alamin-e9acb-default-rtdb.asia-southeast1.firebasedatabase.app
 
 ADMIN_LINK = "https://t.me/netx_support_team"
 BOT_LINK = "https://t.me/netxotp_bot"
-DV_LINK = "https://t.me/Mhnirob1"
-CN_LINK = "https://t.me/netxoffical"
+
 
 sent_msgs = {}
 START_TIME = time.time()
@@ -63,10 +62,7 @@ def send_telegram(date_str, num, sms_text, otp, cli_source, is_update=False):
             {"text": "👨‍🦲Admin", "url": ADMIN_LINK},
             {"text": "🔢Number bot", "url": BOT_LINK}
         ],
-        [
-            {"text": "💥Channel", "url": CN_LINK},
-            {"text": "💻 Developer", "url": DV_LINK}
-        ]
+
     ]
 
     payload = {
