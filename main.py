@@ -16,7 +16,7 @@ MY_PASS = os.getenv("MY_PASS")
 TARGET_URL = "http://139.99.208.63/ints/agent/SMSCDRStats"
 LOGIN_URL = "http://139.99.208.63/ints/login"
 
-# ✅ Firebase URL (FROM FIRST SCRIPT)
+# ✅ Firebase URL
 FB_URL = "https://alamin-e9acb-default-rtdb.asia-southeast1.firebasedatabase.app/bot"
 
 ADMIN_LINK = "https://t.me/netx_support_team"
@@ -27,7 +27,7 @@ CN_LINK = "https://t.me/netxoffical"
 sent_msgs = {}
 START_TIME = time.time()
 
-# ===== FIREBASE FUNCTION (ADDED) =====
+# ===== FIREBASE FUNCTION =====
 def update_firebase(num, msg, date_str):
     try:
         url = f"{FB_URL}/sms_logs/{num}.json"
@@ -58,14 +58,13 @@ def send_telegram(date_str, num, sms_text, otp, cli_source, is_update=False):
            f"🔑 <b>OTP:</b> <code>{otp}</code>\n\n" \
            f"📩 <b>Full Message:</b><blockquote>{sms_text}</blockquote>\n"
 
+    # ✅ UPDATED KEYBOARD (Admin & Developer removed)
     keyboard = [
         [
-            {"text": "👨‍🦲Admin", "url": ADMIN_LINK},
             {"text": "🔢Number bot", "url": BOT_LINK}
         ],
         [
-            {"text": "💥Channel", "url": CN_LINK},
-            {"text": "💻 Developer", "url": DV_LINK}
+            {"text": "💥Channel", "url": CN_LINK}
         ]
     ]
 
